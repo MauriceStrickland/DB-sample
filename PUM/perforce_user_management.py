@@ -196,8 +196,8 @@ def main():
         perf.disconnect_from_perforce()
 
 
-        departed_users *= 0    # Clears lists before running on next server
-        perforce_users *= 0
+        departed_users.clear()   # Clears lists before running on next server
+        perforce_users.clear()
 
     p4_ldap.unbind_from_ldap()
 
